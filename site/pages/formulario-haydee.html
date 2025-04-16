@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Envie sua versão!</title>
+
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+        }
+      </style>
+</head>
+
+
+<body>
+
+    <header>
+        <h1>Envie sua versão!</h1>
+    </header>
+
+    <section>
+        <form>
+
+            <label>
+                <b> Seu nome: </b><input type="text" name="user_name">
+            </label>
+            <p></p>
+
+            <label>
+                <b>Seu email: </b><input type="email" name="user_email">
+            </label>
+            <p></p>
+
+            <label>
+                <b>Nota para o prato (0 a 10): </b>
+                <input type="range" name="user_nota" min="0" max="10" step="1">
+            </label>
+            <p></p>
+
+            <label>
+                <b>Sugestão de variação da receita: </b><textarea name="sugestao_receita"></textarea>
+            </label>
+            <p></p>
+
+            <label>
+                <b>Envie uma foto da sua receita! </b>
+                <br>
+                <input type="file" name="foto" accept=".jpg, .png">
+            </label>
+            <p></p>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Reiniciar">
+            
+        </form>
+    </section>
+</body>
+
+</html>

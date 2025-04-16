@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Receita culinária</title>
+    
+    <style>
+       body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            text-align: center;
+        }
+       
+       .linha-grossa {
+            border: 0;
+            height: 2px;
+            background-color: #1a1919;
+        }
+
+        .bloco-destaque {
+            display: flex;
+            align-items: flex-start;
+            gap: 5px;
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 650px;
+            margin: 30px auto;
+        }
+
+        .main-img {
+            height: 400px;
+            width: auto;
+            border-radius: 10px;
+        }
+
+        .item {
+            margin-bottom: 20px;
+        }
+
+        .item img {
+            width: 50px;
+            height: auto;
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+
+        .item dt {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        dd {
+            margin-left: 75px;
+            margin-bottom: 1px;
+        }
+
+        .imagens-container {
+            display: flex; 
+            justify-content: center; 
+            gap: 30px; 
+        }
+
+        .imagens-container img {
+            width: 350px; 
+            height: auto; 
+            border-radius: 10px; 
+        }
+
+        .tabela-container {
+            max-width: 800px; 
+            margin: 40px auto; 
+            padding: 0 20px; 
+        }
+
+        table {
+            width: 100%;
+            margin: 40px auto; 
+            border-radius: 15px;
+            overflow: hidden; 
+            border-collapse: separate; 
+            font-family: Arial, sans-serif;
+        }
+
+        th, td {
+            border: 1px solid #ddd; 
+            padding: 8px; 
+            text-align: center; 
+        }
+
+        td.observacoes {
+            width: 250px;
+            word-wrap: break-word;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        .lista-centralizada {
+            text-align: center;
+            margin: 40px auto; 
+        }
+
+        .lista-centralizada ol {
+            display: inline-block; 
+            padding: 20px 40px; 
+            text-align: left;
+            padding-left: 40px;
+            background-color: #f0f0f0; 
+            border-radius: 12px; 
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+
+
+<body id="topo">
+
+    <header>
+        <h1>Brownie</h1>
+        <hr class="linha-grossa">
+        <br>
+        <img class="main-img" src="../resources/img/midias-haydee/brownie-com-sorvete.webp" alt="Imagem brownie">
+       
+        <h3>Origem</h3>
+        <p>
+            O brownie surgiu nos 
+            <a href="https://pt.wikipedia.org/wiki/Estados_Unidos" target="_blank">Estados Unidos</a>
+            no final do século XIX, e sua origem é cercada de curiosidades e lendas. Uma das versões mais populares conta que ele nasceu por acidente, quando uma cozinheira esqueceu de adicionar fermento à massa de um bolo de chocolate, resultando em um doce mais baixo, denso e úmido — e surpreendentemente delicioso. Outra história atribui sua criação ao Palmer House Hotel, em Chicago, em 1893, quando a esposa do dono pediu um doce pequeno, prático para comer com as mãos e com muito chocolate para ser servido na Feira Mundial daquele ano. Desde então, o brownie se tornou um clássico da confeitaria americana e ganhou o mundo com suas variações irresistíveis.
+        </p>
+        
+        <h3>Por que escolhi essa receita?</h3>
+        <p>
+            Escolhi essa receita porque adoro prepará-la! Além de ser prática e rápida, o sabor é simplesmente incrível. Fica uma delícia e é perfeita para aqueles dias em que a gente quer algo gostoso, sem perder muito tempo na cozinha. Sem contar que todo mundo adora quando faço!
+        </p>
+    </header>
+
+    <section class="bloco-destaque">
+        <img class="main-img" src="../resources/img/midias-haydee/brownie-empilhado.jpeg" alt="Imagem vários brownies">
+    
+        <div class="descricao">
+          
+            <dl>
+    
+            <div class="item">
+                <dt>
+                    <img src="../resources/img/icon/ingredientes.png" alt="Ícone ingredientes">
+                Ingredientes Principais
+                </dt>
+              <dd>Ovos</dd>
+              <dd>Açúcar</dd>
+              <dd>Manteiga</dd>
+              <dd>Farinha de trigo</dd>
+              <dd>Nescau</dd>
+            </div>
+    
+            <div class="item">
+                <dt>
+                    <img src="../resources/img/icon/tempo.png" alt="Ícone tempo">
+                Tempo de preparo
+                </dt>
+              <dd>Em torno de 40 minutos!</dd>
+            </div>
+    
+            <div class="item">
+                <dt>
+                    <img src="../resources/img/icon/dificuldades.png" alt="Ícone dificuldades">
+                Dificuldades
+                </dt>
+              <dd>Bater bem os ovos com o açúcar para garantir uma casquinha crocante!</dd>
+              <dd>Cuidar pro brownie não virar um bolo!</dd>
+            </div>
+    
+          </dl>
+
+        </div>
+    </section>
+
+
+    <hr>
+
+
+    <section>
+        <h2>Agora vamos para a receita!</h2>
+
+        <table class="tabela-container">
+            <tr>
+                <th>Ingredientes</th> 
+                <th>Quantidade</th>
+                <th>Observações</th>
+            </tr>
+
+            <tr>
+                <td>Ovos</td>
+                <td>3</td>
+                <td class="observacoes" rowspan="5">Você pode adicionar ingredientes como: <strong>nozes, castanhas, gotas de chocolate, Nutella</strong> ou até mesmo <strong>frutas</strong>! Um <strong>sorvete</strong> para acompanhar sempre vai bem também! Explore sua criatividade!</td>
+            </tr>
+            
+            <tr>
+                <td>Açúcar </td>
+                <td>1 xícara</td>
+            </tr>
+
+            <tr>
+                <td>Manteiga derretida</td>
+                <td>150 gramas</td>
+            </tr>
+
+            <tr>
+                <td>Farinha de trigo</td>
+                <td>1 xícara</td>
+            </tr>
+
+            <tr>
+                <td>Nescau</td>
+                <td>2 xícaras</td>
+            </tr>
+        </table>
+
+
+        <p>Deixo aqui algumas referências que podem te inspirar...</p>
+
+        <div class="imagens-container">
+            <img src="../resources/img/midias-haydee/brownie-frutas.avif" alt="Brownie com frutas vermelhas">
+            <img src="../resources/img/midias-haydee/brownie-nutella.jpeg" alt="Brownie com Nutella">
+            <img src="../resources/img/midias-haydee/brownie-nozes.jpeg" alt="Brownie com nozes">
+        </div>
+
+    </section>
+
+
+    <br>
+    <hr>
+    
+    
+    <section>
+        <h3>Passo a passo</h3>
+
+        <div class="lista-centralizada">
+            <p><b>AVISO!</b><em> É importante lembrar de <strong>peneirar</strong> todos os ingredientes secos, para que a massa fique homogênea.</em></p>
+            <ol>
+                <li>Antes de tudo, pré-aqueça o forno a 200°C enquanto prepara a massa do brownie.</li>
+                <li>Em uma tigela, bata os ovos com o açúcar até formar uma mistura clara e espumosa na superfície.</li>
+                <li>Acrescente a manteiga derretida e mexa bem.</li>
+                <li>Em seguida, adicione a farinha de trigo e misture até incorporar.</li>
+                <li>Por fim, adicione o Nescau e continue mexendo até obter uma massa homogênea.</li>
+                <li>Se quiser adicionar algum ingrediente para dar um toque especial, a hora é agora!</li>
+                <li>Unte a forma ou forre com papel manteiga e despeje a massa.</li>
+                <li>Leve ao forno já aquecido por aproximadamente 25 a 30 minutos. Fique atento para não deixar assar demais — o ideal é que o centro fique levemente úmido!</li>
+            </ol>
+        </div>
+
+    </section>
+
+
+    <hr>
+
+
+    <section>
+        <h3>Sugestão de música</h3>
+        <p><em>Cake By The Ocean (DNCE)</em></p>
+        <audio src="../resources/audios/cakeByTheOcean.mp3" controls autoplay loop></audio>
+        <p>Essa é uma ótima escolha para ouvir enquanto faz sua receita! A música é animada e cheia de energia positiva, o que pode fazer o processo de cozinhar ainda mais divertido! Fala sobre aproveitar o momento, se soltar e não se preocupar com as dificuldades, ótima para manter o clima descontraído enquanto você coloca as mãos na massa (literalmente!).
+        </p>
+    </section>
+
+
+    <hr>
+
+
+    <article>
+        <h3>Fez a receita aí na sua casa? Então me conta!</h3>
+        <p>Preencha o formulário abaixo. Eu vou adorar ver a sua versão do brownie!</p>
+        <a href="formulario-haydee.html" target="_blank">
+            <p>Envie sua versão!</p>
+        </a>
+    </article>
+
+
+    <hr>
+
+
+    <footer>
+        <h3>Obrigada por visitar minha página!</h3>
+        <p><b>Feita por:</b> <em>Haydée Dela Vedova Murara</em></p>
+        <p><a href="#topo">Voltar ao topo</a></p>
+    </footer>
+       
+</body>
+
+</html>

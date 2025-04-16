@@ -39,7 +39,6 @@ header::before {
             padding: 0;
             background-color: #000;
             color: #ccc;
-            background-image: url('background-spiderweb.jpg'); /* Adicione uma imagem de teia de aranha */
             background-size: cover;
             background-attachment: fixed;
         }
@@ -104,30 +103,7 @@ header::before {
         form button:hover {
             background-color: #a4161a;
         }
-        .spiderweb {
-            position: absolute;
-            width: 100px;
-            height: 100px;
-            background-image: url('spiderweb.png'); /* Adicione uma imagem de teia de aranha */
-            background-size: contain;
-            background-repeat: no-repeat;
-        }
-        .spiderweb.top-left {
-            top: 10px;
-            left: 10px;
-        }
-        .spiderweb.top-right {
-            top: 10px;
-            right: 10px;
-        }
-        .spiderweb.bottom-left {
-            bottom: 10px;
-            left: 10px;
-        }
-        .spiderweb.bottom-right {
-            bottom: 10px;
-            right: 10px;
-        }
+
         .character-section {
             display: flex;
             align-items: center;
@@ -138,13 +114,24 @@ header::before {
             margin-right: 20px;
             border: 2px solid #444;
         }
+
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('../resources/img/midias-victor/capa-mojica.jpg'); 
+            background-size: contain; 
+            background-position: center;
+            opacity: 0.1 ; 
+            z-index: -1;
+        }
     </style>
 </head>
 <body>
-    <div class="spiderweb top-left"></div>
-    <div class="spiderweb top-right"></div>
-    <div class="spiderweb bottom-left"></div>
-    <div class="spiderweb bottom-right"></div>
+
     <header>
         <h1>A Meia-Noite Levarei Sua Alma</h1>
     </header>
@@ -152,7 +139,7 @@ header::before {
         <div style="display: flex; align-items: flex-start; gap: 20px;">
             
             <div>
-              <img src="../resources/img/poster.jpg" alt="A Meia-Noite Levarei Sua Alma" style="width: 270px;">
+              <img src="../resources/img/midias-victor/poster.jpg" alt="A Meia-Noite Levarei Sua Alma" style="width: 270px;">
             </div>
 
             <div style="color: white;">
@@ -177,32 +164,38 @@ header::before {
         <section>
             <h2>Galeria de Imagens</h2>
             <div class="gallery">
-                <img src="../resources/img/cena-marcante-1.png" alt="Cena marcante 1">
-                <img src="../resources/img/cena-marcante-2.png" alt="Cena marcante 2">
-                <img src="../resources/img/cena-marcante-3.jpg" alt="Cena marcante 3">
-                <img src="../resources/img/cena-marcante-4.jpg" alt="Cena marcante 4">
-                <img src="../resources/img/cena-marcante-5.jpg" alt="Cena marcante 5">
+                <img src="../resources/img/midias-victor/cena-marcante-1.png" alt="Cena marcante 1">
+                <img src="../resources/img/midias-victor/cena-marcante-2.png" alt="Cena marcante 2">
+                <img src="../resources/img/midias-victor/cena-marcante-3.jpg" alt="Cena marcante 3">
+                <img src="../resources/img/midias-victor/cena-marcante-4.jpg" alt="Cena marcante 4">
+                <img src="../resources/img/midias-victor/cena-marcante-5.jpg" alt="Cena marcante 5">
             </div>
         </section>
         <hr>
             <div style="display: flex; align-items: flex-start; gap: 20px;">
             
                 <div>
-                  <img src="../resources/img/BTS.jpg" alt="A Meia-Noite Levarei Sua Alma" style="width: 250px;">
+                  <img src="../resources/img/midias-victor/BTS.jpg" alt="A Meia-Noite Levarei Sua Alma" style="width: 250px;">
                 </div>
                 <section>
             <h2>Contexto de lançamento</h2>
         <p>O lançamento do filme coincidiu com a tomada de poder das forças armadas na Ditadura Civil e Militar. O Brasil havia dissolvido seu conselho nacional de censura e deixado essas decisões para estados individuais. Dessa forma o longa foi proibido em alguns estados e exibido com grande sucesso em outros. Alguns dos comits de censura estavam menos preocupados com a representação da violência do que com o que consideravam blasfémia.
-        </p></div>
+        </p>
     </section>
+    </div>
+    
         <section>
             <hr>
             <h2>Trilha Sonora</h2>
-            <audio controls>
-                <source src="trilha-sonora.mp3" type="audio/mpeg">
-                Seu navegador não suporta o elemento de áudio.
+           
+            <audio autoplay loop controls>
+                <source src="../resources/audios/OEstranhoMundodeZédoCaixãoTheme.mp3" type="audio/mpeg">
             </audio>
-            <p>A trilha sonora foi composta por Hermínio Giménez e contribui para a atmosfera sombria do filme. Um momento marcante é quando a música toca durante a cena em que Zé do Caixão confronta seus inimigos.</p>
+
+            <div>
+                A trilha sonora foi composta por Hermínio Giménez e contribui para a atmosfera sombria do filme.
+            </div>
+            <p>A tela escurece por completo. O silêncio toma conta, até que, aos poucos, uma trilha sonora sinistra começa a se formar — um tema instrumental tenso, marcado por órgãos, metais graves e efeitos que evocam um clima fúnebre e macabro. É o tema de Zé do Caixão. A névoa rasteja por um cemitério iluminado apenas pela luz trêmula da lua. Entre túmulos tortos e árvores secas, uma figura surge lentamente da escuridão: alta, de olhar penetrante, vestida com uma capa preta que se arrasta pelo chão. É ele — Zé do Caixão — com sua cartola característica, barba pontuda e unhas compridas, caminhando com autoridade, como um ser entre o mundo dos vivos e dos mortos.</p>
         </section>
         <section>
             <hr>
@@ -232,7 +225,7 @@ header::before {
        <hr>
         <div style="display: flex; align-items: flex-start; gap: 20px;">
             <div>
-            <img src="../resources/img/mojica-ze.jpg" alt="Zé do Caixão" height="550px" width="800px"  style="border-radius: 10px;">
+            <img src="../resources/img/midias-victor/mojica-ze.jpg" alt="Zé do Caixão" height="550" width="800"  style="border-radius: 10px;">
         </div>
                 <section>
                 <h2>Ator, diretor e roteirista: José Mojica</h2>
